@@ -51,6 +51,9 @@ const selectorOpacity = '25';
         .GRvzhf, .nk37z, .fliwXd-OWXEXe-V67aGc, .huI6Cb, .qoXqmb, .mvRF3b, .Aitr4c, .Evt7cb, .Evt7cb:visited, .lziZub, .lziZub:visited, .XL4gNd, .uW2Fw-Sx9Kwc-OWXEXe-vOE8Lb .uW2Fw-k2Wrsb, .Fgl6fe-fmcmS-yrriRe:not(.Fgl6fe-fmcmS-yrriRe-OWXEXe-OWB6Me) .Fgl6fe-fmcmS-wGMbrd, .aqdrmf-rymPhb-fpDzbe-fmcmS, .qCWAqb, .HqpJve, .WOPwXe, #yDmH0d, .LNBrBd, .asQXV, .y183Ub, .hN1OOc.eumXzf, .gJk24c, .onkcGd, .onkcGd:visited, .WPhuJf, .WPhuJf:visited, .rHGeGc-uusGie-fmcmS, .B7SYid, .tLDEHd, .cC1eCc .VfPpkd-k2Wrsb, .K6Ovqd, .EZrbnd, .z3vRcc, .tDxNLe, .saYe1e, .zuzKle.xVPuB, .zuzKle.vnnr5e, .rHGeGc-O1htCb.rHGeGc-O1htCb-OWXEXe-XpnDCe .rHGeGc-uusGie-fmcmS {
             color: ${mainText} !important;
         }
+        .QUEiXc {
+            --gm3-sys-color-on-surface: ${mainText} !important;
+        }
         .hN1OOc.eumXzf::after {
             border-color: ${mainText} !important;
         }
@@ -101,7 +104,7 @@ const selectorOpacity = '25';
         .OmA97e {
             background-image: none !important;
         }
-    `;
+   `;
 
     function applyCSS() {
         if (!document.getElementById('darkmode-style')) {
