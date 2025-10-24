@@ -60,7 +60,7 @@ const selectorOpacity = '25';
         .DWJNgb, .wZTANe, .J1raN, ViCi4, .dDKhVc, .slDfNd, .slDfNd:visited, .U0QIdc, .U0QIdc:visited {
             color: ${secondaryText} !important;
         }
-        .NMm5M, .sdmSCf, .AeBiU-kBDsod-Rtc0Jf, .mefVYc, .pYTkkf-Bz112c-LgbsSe, .mUIrbf-vQzf8d, .AeBiU-vQzf8d {
+        .NMm5M, .vnnr5e.u3bW4e .I9OJHe.vTcY1d .snByac, .sdmSCf, .AeBiU-kBDsod-Rtc0Jf, .mefVYc, .pYTkkf-Bz112c-LgbsSe, .mUIrbf-vQzf8d, .AeBiU-vQzf8d {
             color: ${accent} !important;
         }
         .RIDjNe {
@@ -85,6 +85,9 @@ const selectorOpacity = '25';
         .wQiG5d, .hN1OOc.eumXzf:hover, .hN1OOc.eumXzf:focus, [class*="Ysl7Fe"] {
             background-color: ${accent}${selectorOpacity} !important;
         }
+        .vnnr5e:not(.RDPZE).u3bW4e {
+            caret-color: ${accent} !important;
+        }
         .rHGeGc-YPmvEd {
             --gm3-menu-container-color: ${secondaryBackground} !important;
             --gm3-list-list-item-label-text-color: ${mainText} !important;
@@ -103,6 +106,9 @@ const selectorOpacity = '25';
         }
         .OmA97e {
             background-image: none !important;
+        }
+        .GWZ7yf {
+            box-shadow: 0 1px 1px 0 ${accent}, 0 2px 8px 1px ${accent}; !important;
         }
    `;
 
