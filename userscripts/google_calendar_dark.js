@@ -1,28 +1,31 @@
 // ==UserScript==
 // @name         Dark Mode - Google Calendar
 // @namespace    https://github.com/sawyersaliba/google-dark-mode
-// @version      1.0.1
+// @version      1.1.0
 // @description  IMPORTANT: Make sure to also enable Google Calendar's native dark mode for best performance.
 // @author       Sawyer Saliba
 // @match        https://calendar.google.com/*
 // @icon         https://www.google.com/s2/favicons?sz=128&domain=google.com
 // ==/UserScript==
 
-// Change Accent Color Here //
+/* Change Accent Colors Here */
 const accent = '#0090ff';
-// Change Accent Color Here //
+/* Change Accent Colors Here */
 
-// Advanced Color Options //
+/* Advanced Color Options */
 const mainBackground = '#0e0e0e';
 const secondaryBackground = '#131313';
 const mainText = '#d7d7d7';
 const secondaryText = '#a7a7a7';
+const selectorOpacity = '25';
 const gridColor = '#3f3f3f';
-// Advanced Color Options //
+/* Advanced Color Options */
 
-// DO NOT EDIT CODE BELOW THIS LINE //
+/* DO NOT EDIT CODE BELOW THIS LINE */
 (function() {
     'use strict';
+
+    const aCol1 = accent;
 
     const css = `
         body {
@@ -39,11 +42,11 @@ const gridColor = '#3f3f3f';
             --gm3-sys-color-on-surface: ${mainText} !important;
             --gm3-sys-color-on-surface-variant: ${mainText} !important;
             --gm3-sys-color-on-primary: ${mainText} !important;
-            --gm3-sys-color-primary-container: ${accent} !important;
-            --gm3-sys-color-secondary-container: ${accent} !important;
-            --gm3-sys-color-primary: ${accent} !important;
-            --gm3-sys-color-outline: ${accent} !important;
-            --gm3-sys-color-surface-bright: ${accent}50 !important;
+            --gm3-sys-color-primary-container: ${aCol1} !important;
+            --gm3-sys-color-secondary-container: ${aCol1} !important;
+            --gm3-sys-color-primary: ${aCol1} !important;
+            --gm3-sys-color-outline: ${aCol1} !important;
+            --gm3-sys-color-surface-bright: ${aCol1}50 !important;
         }
     `;
 
