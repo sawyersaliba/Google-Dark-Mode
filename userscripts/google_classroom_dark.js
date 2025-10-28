@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 /* Change Accent Colors Here */
-const accent = '#ff0000';
+const accent = '#0090ff';
 /* Change Accent Colors Here */
 
 /* Advanced Color Options */
