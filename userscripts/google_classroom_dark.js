@@ -1,28 +1,30 @@
 // ==UserScript==
 // @name         Dark Mode - Google Classroom
 // @namespace    https://github.com/sawyersaliba/google-dark-mode
-// @version      1.0.0
-// @description  IMPORTANT: Various visual fixes are yet to come, including in the classwork tab and the blue selection indicator. Please report any issues so I can fix them.
+// @version      1.1.0
+// @description  IMPORTANT: Various visual fixes are yet to come, including the blue selection indicator. Please report any issues so I can fix them.
 // @author       Sawyer Saliba
 // @match        https://classroom.google.com/*
 // @icon         https://www.google.com/s2/favicons?sz=128&domain=google.com
 // ==/UserScript==
 
-// Change Accent Color Here //
-const accent = '#0090ff';
-// Change Accent Color Here //
+/* Change Accent Colors Here */
+const accent = '#ff0000';
+/* Change Accent Colors Here */
 
-// Advanced Color Options //
+/* Advanced Color Options */
 const mainBackground = '#0e0e0e';
 const secondaryBackground = '#131313';
 const mainText = '#d7d7d7';
 const secondaryText = '#a7a7a7';
 const selectorOpacity = '25';
-// Advanced Color Options //
+/* Advanced Color Options */
 
-// DO NOT EDIT CODE BELOW THIS LINE //
+/* DO NOT EDIT CODE BELOW THIS LINE */
 (function() {
     'use strict';
+
+    const aCol1 = accent;
 
     const css = `
         body, .KEDCCd, .TgJ2ub .uQ3ESd, .kFwPee, .O68mGe-xl07Ob, .Z3qXvc, .QRiHXd, .vnnr5e .I9OJHe, .vnnr5e .CIy9F, .d4Fe0d, .Aopndd, .uW2Fw-P5QLlc {
@@ -36,7 +38,7 @@ const selectorOpacity = '25';
             border-top: .0625rem solid ${secondaryBackground} !important;
             border-bottom: .0625rem solid ${secondaryBackground} !important;
         }
-        .rknsod, .aqdrmf-clz4Ic, .V8apv, .cC1eCc .VfPpkd-P5QLlc, .hgjBDc, .Fgl6fe-fmcmS-yrriRe:not(.Fgl6fe-fmcmS-yrriRe-OWXEXe-OWB6Me), .N6nSod, .riU7le {
+        .rknsod, .aqdrmf-clz4Ic, .wBE4bf, .V8apv, .cC1eCc .VfPpkd-P5QLlc, .hgjBDc, .Fgl6fe-fmcmS-yrriRe:not(.Fgl6fe-fmcmS-yrriRe-OWXEXe-OWB6Me), .N6nSod, .riU7le {
             background-color: ${secondaryBackground} !important;
         }
         .joJglb, .EXL71e {
@@ -61,32 +63,32 @@ const selectorOpacity = '25';
             color: ${secondaryText} !important;
         }
         .NMm5M, .vnnr5e.u3bW4e .I9OJHe.vTcY1d .snByac, .sdmSCf, .AeBiU-kBDsod-Rtc0Jf, .mefVYc, .pYTkkf-Bz112c-LgbsSe, .mUIrbf-vQzf8d, .AeBiU-vQzf8d {
-            color: ${accent} !important;
+            color: ${aCol1} !important;
         }
         .RIDjNe {
-            border-right: .0625rem solid ${accent} !important;
+            border-right: .0625rem solid ${aCol1} !important;
         }
         .d4Fe0d, .q1Kmyc {
-            border: .0625rem solid ${accent} !important;
+            border: .0625rem solid ${aCol1} !important;
         }
         .riU7le, .Aopndd, .GhEnC-gBXA9-bMcfAe:enabled:checked+.GhEnC-RsCWK .GhEnC-wVo5xe-LkdAo, .GhEnC-gBXA9-bMcfAe:enabled+.GhEnC-RsCWK .GhEnC-Z5TpLc-LkdAo {
-            border-color: ${accent} !important;
+            border-color: ${aCol1} !important;
         }
         .s2g3Xd {
-            border-top: .0625rem solid ${accent} !important;
+            border-top: .0625rem solid ${aCol1} !important;
         }
         .UywwFc-LgbsSe, .eBlXUe-scr2fc-OWXEXe-gk6SMd .eBlXUe-l6JLsf, .GhEnC-gBXA9-bMcfAe:enabled+.GhEnC-RsCWK .GhEnC-Z5TpLc-LkdAo {
-            background-color: ${accent} !important;
+            background-color: ${aCol1} !important;
         }
         .mUIrbf-LgbsSe {
-            --gm3-ripple-hover-color: ${accent} !important;
-            --gm3-ripple-pressed-color: ${accent} !important;
+            --gm3-ripple-hover-color: ${aCol1} !important;
+            --gm3-ripple-pressed-color: ${aCol1} !important;
         }
         .wQiG5d, .hN1OOc.eumXzf:hover, .hN1OOc.eumXzf:focus, [class*="Ysl7Fe"] {
-            background-color: ${accent}${selectorOpacity} !important;
+            background-color: ${aCol1}${selectorOpacity} !important;
         }
         .vnnr5e:not(.RDPZE).u3bW4e {
-            caret-color: ${accent} !important;
+            caret-color: ${aCol1} !important;
         }
         .rHGeGc-YPmvEd {
             --gm3-menu-container-color: ${secondaryBackground} !important;
@@ -96,7 +98,7 @@ const selectorOpacity = '25';
             --gm3-list-list-item-selected-label-text-color: ${mainText} !important;
             --gm3-list-list-item-selected-hover-label-text-color: ${mainText} !important;
             --gm3-list-list-item-selected-focus-label-text-color: ${mainText} !important;
-            --gm3-list-list-item-selected-container-color: ${accent}${selectorOpacity} !important;
+            --gm3-list-list-item-selected-container-color: ${aCol1}${selectorOpacity} !important;
         }
         li, .mwJvDe .KEDCCd {
             border-bottom: transparent !important;
@@ -108,7 +110,7 @@ const selectorOpacity = '25';
             background-image: none !important;
         }
         .GWZ7yf {
-            box-shadow: 0 1px 1px 0 ${accent}, 0 2px 8px 1px ${accent}; !important;
+            box-shadow: 0 1px 1px 0 ${aCol1}, 0 2px 8px 1px ${aCol1}; !important;
         }
    `;
 
