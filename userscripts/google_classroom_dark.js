@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dark Mode - Google Classroom
 // @namespace    https://github.com/sawyersaliba/google-dark-mode
-// @version      1.1.0
+// @version      1.4.2
 // @description  IMPORTANT: Various visual fixes are yet to come, including the blue selection indicator. Please report any issues so I can fix them.
 // @author       Sawyer Saliba
 // @match        https://classroom.google.com/*
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 /* Change Accent Colors Here */
-const accent = '#0090ff';
+const accent = '#c20000';
 /* Change Accent Colors Here */
 
 /* Advanced Color Options */
@@ -50,7 +50,7 @@ const selectorOpacity = '25';
         .VDj5V {
             border-top: ${secondaryBackground} !important;
         }
-        .GRvzhf, .nk37z, .fliwXd-OWXEXe-V67aGc, .huI6Cb, .qoXqmb, .mvRF3b, .Aitr4c, .Evt7cb, .Evt7cb:visited, .lziZub, .lziZub:visited, .XL4gNd, .uW2Fw-Sx9Kwc-OWXEXe-vOE8Lb .uW2Fw-k2Wrsb, .Fgl6fe-fmcmS-yrriRe:not(.Fgl6fe-fmcmS-yrriRe-OWXEXe-OWB6Me) .Fgl6fe-fmcmS-wGMbrd, .aqdrmf-rymPhb-fpDzbe-fmcmS, .qCWAqb, .HqpJve, .WOPwXe, #yDmH0d, .LNBrBd, .asQXV, .y183Ub, .hN1OOc.eumXzf, .gJk24c, .onkcGd, .onkcGd:visited, .WPhuJf, .WPhuJf:visited, .rHGeGc-uusGie-fmcmS, .B7SYid, .tLDEHd, .cC1eCc .VfPpkd-k2Wrsb, .K6Ovqd, .EZrbnd, .z3vRcc, .tDxNLe, .saYe1e, .zuzKle.xVPuB, .zuzKle.vnnr5e, .rHGeGc-O1htCb.rHGeGc-O1htCb-OWXEXe-XpnDCe .rHGeGc-uusGie-fmcmS {
+        .GRvzhf, .zs1A9, .JShLh, .Ea4RVb, .aAxDBb, .oDLUVd, .QRiHXd, .nk37z, .fliwXd-OWXEXe-V67aGc, .huI6Cb, .qoXqmb, .mvRF3b, .Aitr4c, .Evt7cb, .Evt7cb:visited, .lziZub, .lziZub:visited, .XL4gNd, .uW2Fw-Sx9Kwc-OWXEXe-vOE8Lb .uW2Fw-k2Wrsb, .Fgl6fe-fmcmS-yrriRe:not(.Fgl6fe-fmcmS-yrriRe-OWXEXe-OWB6Me) .Fgl6fe-fmcmS-wGMbrd, .aqdrmf-rymPhb-fpDzbe-fmcmS, .qCWAqb, .HqpJve, .WOPwXe, #yDmH0d, .LNBrBd, .asQXV, .y183Ub, .hN1OOc.eumXzf, .gJk24c, .onkcGd, .onkcGd:visited, .WPhuJf, .WPhuJf:visited, .rHGeGc-uusGie-fmcmS, .B7SYid, .tLDEHd, .cC1eCc .VfPpkd-k2Wrsb, .K6Ovqd, .EZrbnd, .z3vRcc, .tDxNLe, .saYe1e, .zuzKle.xVPuB, .zuzKle.vnnr5e, .rHGeGc-O1htCb.rHGeGc-O1htCb-OWXEXe-XpnDCe .rHGeGc-uusGie-fmcmS {
             color: ${mainText} !important;
         }
         .QUEiXc {
@@ -59,7 +59,7 @@ const selectorOpacity = '25';
         .hN1OOc.eumXzf::after {
             border-color: ${mainText} !important;
         }
-        .DWJNgb, .wZTANe, .J1raN, ViCi4, .dDKhVc, .slDfNd, .slDfNd:visited, .U0QIdc, .U0QIdc:visited {
+        .DWJNgb, .VUITHf, .BjHIWe, .wZTANe, .J1raN, ViCi4, .dDKhVc, .slDfNd, .slDfNd:visited, .U0QIdc, .U0QIdc:visited, .tWeh6 {
             color: ${secondaryText} !important;
         }
         .NMm5M, .vnnr5e.u3bW4e .I9OJHe.vTcY1d .snByac, .sdmSCf, .AeBiU-kBDsod-Rtc0Jf, .mefVYc, .pYTkkf-Bz112c-LgbsSe, .mUIrbf-vQzf8d, .AeBiU-vQzf8d {
@@ -111,6 +111,12 @@ const selectorOpacity = '25';
         }
         .GWZ7yf {
             box-shadow: 0 1px 1px 0 ${aCol1}, 0 2px 8px 1px ${aCol1}; !important;
+        }
+        .MHxtic {
+            border-radius: 8px;
+        }
+        .MHxtic:hover, .MHxtic:focus-within, .MHxtic:hover .QRiHXd, .MHxtic:focus-within .QRiHXd {
+            background-color: ${secondaryBackground} !important;
         }
    `;
 
